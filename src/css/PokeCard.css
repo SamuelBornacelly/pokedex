@@ -1,0 +1,584 @@
+
+.PokeCard__container {
+  z-index: 5;
+  position: relative;
+  max-width: 350px;
+  padding: 2em 3em;
+  /* border: 10px solid; */
+  border-radius: 1em;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 200ms ease;
+  background-color: #fff;
+}
+
+.PokeCard__container:hover {
+  transform: translate(0, -20px);
+}
+
+/* .PokeCard__header {} */
+
+.PokeCard__header_background {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  top: 0;
+  left: 0;
+  border-radius: 1em 1em 0 0;
+}
+
+.PokeCard__header_img {
+  transition: transform 300ms ease;
+}
+
+.PokeCard__container:hover .PokeCard__header_img {
+  transform: scale(1.1) translate(0, -15px);
+}
+
+/* .PokeCard__section {} */
+
+.PokeCard__section_div_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PokeCard__section_h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.PokeCard__section_ul_1 {
+  display: flex;
+  column-gap: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.PokeCard__section_li_1 {
+  font-size: 16px;
+}
+
+.PokeCard__section_li_1:nth-child(2)::before {
+  content: '/ ';
+}
+
+.PokeCard__section_p {
+  font-size: 12px;
+  color: #9c9c9c;
+}
+
+.PokeCard__section_hr {
+  margin: 10px 0;
+  border: 1px solid #E4E6E7;
+}
+
+.PokeCard__section_ul_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2em;
+}
+
+.PokeCard__section_li_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+}
+
+.PokeCard__span_1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #9c9c9c;
+}
+
+.PokeCard__span_2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*! Normal */
+
+.PokeCard__container.normal {
+  border-color: #b9b6a8;
+}
+
+.PokeCard__header_background.normal,
+.PokedexIdPage__info_background.normal {
+  background: linear-gradient(180deg, #9b9682, #f5f0dc);
+}
+
+.PokeCard__section_h3.normal,
+.PokedexIdPage__info_number.normal,
+.PokedexIdPage__info_name.normal {
+  color: #99968b;
+}
+
+.PokedexIdPage__info_types_li.normal,
+.PokedexIdPage__abilities_li:hover.normal {
+  background-color: #99968b;
+}
+
+.PokeCard__span_2.normal {
+  color: #99968b;
+}
+
+
+/*! Fighting */
+
+.PokeCard__container.fighting {
+  border-color: #a85644;
+}
+
+.PokeCard__header_background.fighting,
+.PokedexIdPage__info_background.fighting {
+  background: linear-gradient(180deg, #7c3e30, #ffb2a0);
+}
+
+.PokeCard__section_h3.fighting,
+.PokedexIdPage__info_number.fighting,
+.PokedexIdPage__info_name.fighting {
+  color: #a85644;
+}
+
+.PokedexIdPage__info_types_li.fighting,
+.PokedexIdPage__abilities_li:hover.fighting {
+  background-color: #a85644;
+}
+
+.PokeCard__span_2.fighting {
+  color: #a85644;
+}
+
+
+/*! Flying */
+
+.PokeCard__container.flying {
+  border-color: #79a2ff;
+}
+
+.PokeCard__header_background.flying,
+.PokedexIdPage__info_background.flying {
+  background: linear-gradient(180deg, #6d92eb, #c7d8ff);
+}
+
+.PokeCard__section_h3.flying,
+.PokedexIdPage__info_number.flying,
+.PokedexIdPage__info_name.flying {
+  color: #79a2ff;
+}
+
+.PokedexIdPage__info_types_li.flying,
+.PokedexIdPage__abilities_li:hover.flying {
+  background-color: #79a2ff;
+}
+
+.PokeCard__span_2.flying {
+  color: #79a2ff;
+}
+
+
+/*! Poison */
+
+.PokeCard__container.poison {
+  border-color: #9b5691;
+}
+
+.PokeCard__header_background.poison,
+.PokedexIdPage__info_background.poison {
+  background: linear-gradient(180deg, #83497a, #ffbcf5);
+}
+
+.PokeCard__section_h3.poison,
+.PokedexIdPage__info_number.poison,
+.PokedexIdPage__info_name.poison {
+  color: #9b5691;
+}
+
+.PokedexIdPage__info_types_li.poison,
+.PokedexIdPage__abilities_li:hover.poison {
+  background-color: #9b5691;
+}
+
+.PokeCard__span_2.poison {
+  color: #9b5691;
+}
+
+
+/*! Ground */
+
+.PokeCard__container.ground {
+  border-color: #eacb56;
+}
+
+.PokeCard__header_background.ground,
+.PokedexIdPage__info_background.ground {
+  background: linear-gradient(180deg, #c5a738, #ffe99b);
+}
+
+.PokeCard__section_h3.ground,
+.PokedexIdPage__info_number.ground,
+.PokedexIdPage__info_name.ground {
+  color: #eacb56;
+}
+
+.PokedexIdPage__info_types_li.ground,
+.PokedexIdPage__abilities_li:hover.ground {
+  background-color: #eacb56;
+}
+
+.PokeCard__span_2.ground {
+  color: #eacb56;
+}
+
+
+/*! Rock */
+
+.PokeCard__container.rock {
+  border-color: #bcaf6b;
+}
+
+.PokeCard__header_background.rock,
+.PokedexIdPage__info_background.rock {
+  background: linear-gradient(180deg, #9e9257, #fceb96);
+}
+
+.PokeCard__section_h3.rock,
+.PokedexIdPage__info_number.rock,
+.PokedexIdPage__info_name.rock {
+  color: #bcaf6b;
+}
+
+.PokedexIdPage__info_types_li.rock,
+.PokedexIdPage__abilities_li:hover.rock {
+  background-color: #bcaf6b;
+}
+
+.PokeCard__span_2.rock {
+  color: #bcaf6b;
+}
+
+
+/*! Bug */
+
+.PokeCard__container.bug {
+  border-color: #b8c227;
+}
+
+.PokeCard__header_background.bug,
+.PokedexIdPage__info_background.bug {
+  background: linear-gradient(180deg, #969e1f, #fcffd7);
+}
+
+.PokeCard__section_h3.bug,
+.PokedexIdPage__info_number.bug,
+.PokedexIdPage__info_name.bug {
+  color: #b8c227;
+}
+
+.PokedexIdPage__info_types_li.bug,
+.PokedexIdPage__abilities_li:hover.bug {
+  background-color: #b8c227;
+}
+
+.PokeCard__span_2.bug {
+  color: #b8c227;
+}
+
+
+/*! Ghost */
+
+.PokeCard__container.ghost {
+  border-color: #6e69bd;
+}
+
+.PokeCard__header_background.ghost,
+.PokedexIdPage__info_background.ghost {
+  background: linear-gradient(180deg, #595499, #b8b3ff);
+}
+
+.PokeCard__section_h3.ghost,
+.PokedexIdPage__info_number.ghost,
+.PokedexIdPage__info_name.ghost {
+  color: #6e69bd;
+}
+
+.PokedexIdPage__info_types_li.ghost,
+.PokedexIdPage__abilities_li:hover.ghost {
+  background-color: #6e69bd;
+}
+
+.PokeCard__span_2.ghost {
+  color: #6e69bd;
+}
+
+
+/*! Steel */
+
+.PokeCard__container.steel {
+  border-color: #c5c2d0;
+}
+
+.PokeCard__header_background.steel,
+.PokedexIdPage__info_background.steel {
+  background: linear-gradient(180deg, #9d99a8, #f1eff7);
+}
+
+.PokeCard__section_h3.steel,
+.PokedexIdPage__info_number.steel,
+.PokedexIdPage__info_name.steel {
+  color: #c5c2d0;
+}
+
+.PokedexIdPage__info_types_li.steel,
+.PokedexIdPage__abilities_li:hover.steel {
+  background-color: #c5c2d0;
+}
+
+.PokeCard__span_2.steel {
+  color: #c5c2d0;
+}
+
+
+/*! Fire */
+
+.PokeCard__container.fire {
+  border-color: #fa8601;
+}
+
+.PokeCard__header_background.fire,
+.PokedexIdPage__info_background.fire {
+  background: linear-gradient(180deg, #fa8601, #f5d02b);
+}
+
+.PokeCard__section_h3.fire,
+.PokedexIdPage__info_number.fire,
+.PokedexIdPage__info_name.fire {
+  color: #fa8601;
+}
+
+.PokedexIdPage__info_types_li.fire,
+.PokedexIdPage__abilities_li:hover.fire {
+  background-color: #fa8601;
+}
+
+.PokeCard__span_2.fire {
+  color: #fa8601;
+}
+
+
+/*! Water */
+
+.PokeCard__container.water {
+  border-color: #60b0ff;
+}
+
+.PokeCard__header_background.water,
+.PokedexIdPage__info_background.water {
+  background: linear-gradient(180deg, #529ae2, #b9dcff);
+}
+
+.PokeCard__section_h3.water,
+.PokedexIdPage__info_number.water,
+.PokedexIdPage__info_name.water {
+  color: #60b0ff;
+}
+
+.PokedexIdPage__info_types_li.water,
+.PokedexIdPage__abilities_li:hover.water {
+  background-color: #60b0ff;
+}
+
+.PokeCard__span_2.water {
+  color: #60b0ff;
+}
+
+
+/*! Grass */
+
+.PokeCard__container.grass {
+  border-color: #b6dcb4;
+}
+
+.PokeCard__header_background.grass,
+.PokedexIdPage__info_background.grass {
+  background: linear-gradient(180deg, #7dc6c5, #c8df99);
+}
+
+.PokeCard__section_h3.grass,
+.PokedexIdPage__info_number.grass,
+.PokedexIdPage__info_name.grass {
+  color: #b6dcb4;
+}
+
+.PokedexIdPage__info_types_li.grass,
+.PokedexIdPage__abilities_li:hover.grass {
+  background-color: #b6dcb4;
+}
+
+.PokeCard__span_2.grass {
+  color: #b6dcb4;
+}
+
+
+/*! Electric */
+
+.PokeCard__container.electric {
+  border-color: #fee741;
+}
+
+.PokeCard__header_background.electric,
+.PokedexIdPage__info_background.electric {
+  background: linear-gradient(180deg, #f0d400, #fff6b3);
+}
+
+.PokeCard__section_h3.electric,
+.PokedexIdPage__info_number.electric,
+.PokedexIdPage__info_name.electric {
+  color: #fee741;
+}
+
+.PokedexIdPage__info_types_li.electric,
+.PokedexIdPage__abilities_li:hover.electric {
+  background-color: #fee741;
+}
+
+.PokeCard__span_2.electric {
+  color: #fee741;
+}
+
+
+/*! Psychic */
+
+.PokeCard__container.psychic {
+  border-color: #fa64b2;
+}
+
+.PokeCard__header_background.psychic,
+.PokedexIdPage__info_background.psychic {
+  background: linear-gradient(180deg, #ee1585, #ffa0d1);
+}
+
+.PokeCard__section_h3.psychic,
+.PokedexIdPage__info_number.psychic,
+.PokedexIdPage__info_name.psychic {
+  color: #fa64b2;
+}
+
+.PokedexIdPage__info_types_li.psychic,
+.PokedexIdPage__abilities_li:hover.psychic {
+  background-color: #fa64b2;
+}
+
+.PokeCard__span_2.psychic {
+  color: #fa64b2;
+}
+
+
+/*! Ice */
+
+.PokeCard__container.ice {
+  border-color: #9bfaff;
+}
+
+.PokeCard__header_background.ice,
+.PokedexIdPage__info_background.ice {
+  background: linear-gradient(180deg, #27e3ec, #c8fcff);
+}
+
+.PokeCard__section_h3.ice,
+.PokedexIdPage__info_number.ice,
+.PokedexIdPage__info_name.ice {
+  color: #27e3ec;
+}
+
+.PokedexIdPage__info_types_li.ice,
+.PokedexIdPage__abilities_li:hover.ice {
+  background-color: #27e3ec;
+}
+
+.PokeCard__span_2.ice {
+  color: #27e3ec;
+}
+
+
+/*! Dragon */
+
+.PokeCard__container.dragon {
+  border-color: #8a76ff;
+}
+
+.PokeCard__header_background.dragon,
+.PokedexIdPage__info_background.dragon {
+  background: linear-gradient(180deg, #4e34e2, #c7bdff);
+}
+
+.PokeCard__section_h3.dragon,
+.PokedexIdPage__info_number.dragon,
+.PokedexIdPage__info_name.dragon {
+  color: #8a76ff;
+}
+
+.PokedexIdPage__info_types_li.dragon,
+.PokedexIdPage__abilities_li:hover.dragon {
+  background-color: #8a76ff;
+}
+
+.PokeCard__span_2.dragon {
+  color: #8a76ff;
+}
+
+
+/*! Dark */
+
+.PokeCard__container.dark {
+  border-color: #8e6956;
+}
+
+.PokeCard__header_background.dark,
+.PokedexIdPage__info_background.dark {
+  background: linear-gradient(180deg, #6d4c3c, #e4b39a);
+}
+
+.PokeCard__section_h3.dark,
+.PokedexIdPage__info_number.dark,
+.PokedexIdPage__info_name.dark {
+  color: #8e6956;
+}
+
+.PokedexIdPage__info_types_li.dark,
+.PokedexIdPage__abilities_li:hover.dark {
+  background-color: #8e6956;
+}
+
+.PokeCard__span_2.dark {
+  color: #8e6956;
+}
+
+
+/*! Fairy */
+.PokeCard__container.fairy {
+  border-color: #f9adff;
+}
+
+.PokeCard__header_background.fairy,
+.PokedexIdPage__info_background.fairy {
+  background: linear-gradient(180deg, #f06afa, #fbd5fd);
+}
+
+.PokeCard__section_h3.fairy,
+.PokedexIdPage__info_number.fairy,
+.PokedexIdPage__info_name.fairy {
+  color: #f9adff;
+}
+
+.PokedexIdPage__info_types_li.fairy,
+.PokedexIdPage__abilities_li:hover.fairy {
+  background-color: #f9adff;
+}
+
+.PokeCard__span_2.fairy {
+  color: #f9adff;
+}
