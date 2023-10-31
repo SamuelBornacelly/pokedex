@@ -30,6 +30,7 @@ Paleta de colores
 }
 
 .container__p {
+  text-align: center;
   font-size: 20px;
   line-height: 1.2em;
 }
@@ -42,7 +43,7 @@ Paleta de colores
 }
 
 .container__input {
-  width: 50vw;
+  width: 70vw;
   max-width: 300px;
   height: 35px;
   font-size: 16px;
